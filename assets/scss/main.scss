@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@600;700&display=swap');
+
 #background-video {
     width: auto;
     height: 100%;
     position: fixed;
     user-select: none;
-
-    
 }
+
+
 .overlay-video {
     &::after {
         content: "";
@@ -16,4 +18,62 @@
         top: 0;
         left: 0;
     }
+}
+
+.qr-code-section {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.qr-code-modal {
+    margin-top: 100px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(180, 180, 187, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    @media screen and (max-width: 992px) {
+        backdrop-filter: none;
+    }
+}
+
+.qr-inputs {
+    input {
+        border-radius: 0;
+        transition: none;
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0;
+        }
+    }
+
+    button {
+        background-color: #00ad3a;
+        color: #fff;
+        font-family: 'Lexend Zetta', sans-serif;
+        font-weight: 600;
+        border: 0px;
+        border-radius: 0;
+        outline: 0;
+    }
+}
+
+
+.logo {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.download-btn {
+    font-family: 'Lexend Zetta', sans-serif;
+    border-radius: 0px;
 }
