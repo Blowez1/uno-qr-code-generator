@@ -62,7 +62,8 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'tr'
+      lang: 'tr',
+      description : 'Qr Kod Oluşturucu'
     }
   },
 

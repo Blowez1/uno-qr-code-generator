@@ -4,7 +4,7 @@ export const state = () => ({
   value: "",
   size: 256,
   renderAs: "canvas",
-  level: "H",
+  level: "L",
   isQrCode: false
 })
 
