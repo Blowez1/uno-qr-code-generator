@@ -16,8 +16,7 @@
 </template>
 <script>
 const title = 'Uno Qr Kod Oluşturucu'
-const desc =
-  'Uno Qr Kod Oluşturucu sayesinde istediğiniz yerde kullanabileceğiniz şekilde hızlıca Qr Kodu oluşturabileceksiniz.'
+const desc = 'Uno Qr Kod Oluşturucu sayesinde istediğiniz yerde kullanabileceğiniz şekilde hızlıca Qr Kodu oluşturabileceksiniz.'
 export default {
   head() {
     return {

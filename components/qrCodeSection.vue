@@ -4,6 +4,7 @@
       <qrcode-vue
         :value="value"
         :size="size"
+        :margin="margin"
         class="qr-code-image-canvas"
         :level="level"
         :render-as="renderAs"
@@ -23,12 +24,19 @@ export default {
   components: {
     QrcodeVue,
   },
-  computed: mapState(['isQrCode', 'value', 'level', 'renderAs', 'size']),
+  computed: mapState([
+    'isQrCode',
+    'value',
+    'level',
+    'renderAs',
+    'size',
+    'margin',
+  ]),
   methods: {
     downloadQr() {
       const canvas = document.querySelector('.qr-code-image-canvas canvas')
       const link = document.createElement('a')
-      link.download = "uno-" + Date.now() + '-qr.png'
+      link.download = 'uno-' + Date.now() + '-qr.png'
       link.href = canvas.toDataURL()
       link.click()
       link.delete

@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Uno Qr-Code Oluştur ',
+    title: 'Uno Qr-Code Oluştur',
     meta: [{
         charset: 'utf-8'
       },
